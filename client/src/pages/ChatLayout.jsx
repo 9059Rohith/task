@@ -8,6 +8,7 @@ import {
   addOnlineUser,
   removeOnlineUser,
   setTypingUser,
+  removeTypingUser,
   removeMessage,
   updateMessageReadBy,
   fetchMessages,
@@ -65,7 +66,7 @@ const ChatLayout = () => {
       if (data.isTyping) {
         dispatch(setTypingUser(data));
       } else {
-        dispatch({ type: 'chat/removeTypingUser', payload: data.userId });
+        dispatch(removeTypingUser(data.userId));
       }
     });
 
