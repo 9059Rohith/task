@@ -12,7 +12,7 @@ const app = express();
 // Security Middleware
 app.use(helmet());
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:5173',
+  origin: [process.env.CLIENT_URL, 'http://localhost:5173', 'https://task-pearl-six-50.vercel.app'],
   credentials: true
 }));
 

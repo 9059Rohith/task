@@ -11,7 +11,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: process.env.CLIENT_URL || 'http://localhost:5173',
+    origin: [process.env.CLIENT_URL, 'http://localhost:5173', 'https://task-pearl-six-50.vercel.app'],
     credentials: true,
     methods: ["GET", "POST"]
   }
