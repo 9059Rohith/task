@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Send } from 'lucide-react';
 import socketService from '../services/socketService';
 
@@ -62,7 +62,6 @@ const MessageInput = () => {
     }
   };
 
-  const charsLeft = maxLength - content.length;
   const isOverLimit = content.length > maxLength;
   const isDisabled = !content.trim() || isOverLimit;
 

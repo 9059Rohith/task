@@ -1,4 +1,3 @@
-import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectOnlineUsers, selectUnreadCount } from '../store/chatSlice';
 import { selectCurrentUser, logout } from '../store/authSlice';

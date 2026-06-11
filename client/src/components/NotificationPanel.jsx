@@ -1,4 +1,3 @@
-import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectNotifications, clearNotifications, markNotificationRead } from '../store/chatSlice';
 import { toggleNotifPanel } from '../store/uiSlice';
