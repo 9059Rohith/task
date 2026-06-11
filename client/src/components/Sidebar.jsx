@@ -20,7 +20,7 @@ const Sidebar = () => {
       <div style={styles.header}>
         <div style={styles.logo}>
           <MessageSquare size={24} color="var(--accent-color)" />
-          <h1 style={styles.title}>TARS</h1>
+          <h1 style={styles.title}>ChatApp</h1>
         </div>
         <button 
           style={styles.notifBtn} 
